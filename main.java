@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Group!");
-        System.out.println("Our first Java project");
+        System.out.println("our first dsa project ");
     }
 }
