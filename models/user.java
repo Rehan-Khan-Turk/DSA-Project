@@ -46,4 +46,46 @@ public class user {
         }
         this.name=name.trim();
     }
+    public String getemail(){
+        return email;
+    }
+    public void setemail(String email){
+        if (email==null ||
+            !Pattern.matches("^[\\\\w.-]+@[\\\\w.-]+\\\\.[A-Za-z]{2,}$",email)) {
+                throw new IllegalArgumentException("Invalid Email.Please enter a valid email address");
+            }
+            this.email=email.trim();
+    }
+    public String getpassword(){
+        return password;
+    }
+    public void setpassword(String password){
+        if (password==null || password.length()<8){
+            throw new IllegalArgumentException("Invalid Password.Please enter a valid password");
+        }
+        this.password=password;
+    }
+    public String getphone(){
+        return phone;
+    }
+    public void setphone(String phone){
+        if (phone==null || phone.trim().isEmpty()){
+            throw new IllegalArgumentException("Phone cannot be empty");
+        }
+        this.phone=phone.trim();
+    }
+    public String getrole(){
+        return role;
+    }
+    public void setrole(String role){
+        if(role==null ||
+            !(role.equalsIgnoreCase("Admin")||
+            role.equalsIgnoreCase("Sales Staff")||
+            role.equalsIgnoreCase("Manager")||
+            role.equalsIgnoreCase("Customer"))){
+                throw new IllegalArgumentException("Invalid User Role");
+            }
+            this.role=role.trim();
+        
+    }
 }
