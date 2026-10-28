@@ -4,6 +4,7 @@ Rehan Khan Turk        25FA-005-SE
 Faheem Ullah Khan      25FA-006-SE
 Mohammad Sehan Asif    25FA-030-SE
 Introduction:
+
 The “Car Sell & Purchase Management System” is a software project designed to manage the buying and selling of cars in an organized way. The system allows users to add car records, view available cars, search for specific cars, purchase cars, and manage car information.The project applies Data Structures and Algorithms (DSA) concepts to store, search, sort, and manage car records efficiently. It provides a simple and organized solution for managing car sales and purchases.
 Project Objectives:
 The main objectives of the project are:
