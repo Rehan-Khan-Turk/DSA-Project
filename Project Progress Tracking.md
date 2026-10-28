@@ -7,3 +7,4 @@ At the start of the project,all the group members did research on how to start t
 DSA Project Week 2 Day 1 Work:
 
 Today,I,"Rehan Khan Turk" started working on User.java class and made a total of 7 attributes,assigned those in an constructor along with their respective getter and setter methods.Furthermore,Two writing files "Project Progress Tracking" was created to track all member's progress and "Project Overview" was created explaining breifly about our project.
+
