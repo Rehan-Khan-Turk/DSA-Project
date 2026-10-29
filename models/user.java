@@ -86,6 +86,36 @@ public class user {
                 throw new IllegalArgumentException("Invalid User Role");
             }
             this.role=role.trim();
-        
+    }
+    public boolean isActive() {
+        return  active;
+    }
+    public void setActive(boolean active){
+        this.active=active;
+    }
+    public boolean login(String enteredusername, String enteredpassword ) {
+        return active && username.equals(enteredusername) && password.equals(enteredpassword);
+    }
+    public void logout(){
+        System.out.println(name + "is logged out");
+    }
+    public void displayUserdetails() {
+        System.out.println("UserID: " + UserID );
+        System.out.println("Name: " + name);
+        System.out.println("Username: " + username);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("Role: " + role);
+        System.out.println("Status: " + (active ? "Active" : "Inactive"));
+    }
+    public void deactivateUser() {
+        active=false;
+    }
+    public void activateUser() {
+        active=true;
+    }
+    public String toString() {
+        return "UserID: " + UserID + ",Name: " + name + ",Username: " + username + ",Email: " + email + ",Phone: " 
+        + phone + ",Role: " + role + ",Status: " + (active ? "Active" : "Inactive");
     }
 }
