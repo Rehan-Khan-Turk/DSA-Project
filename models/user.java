@@ -51,7 +51,7 @@ public class user {
     }
     public void setemail(String email){
         if (email==null ||
-            !Pattern.matches("^[\\\\w.-]+@[\\\\w.-]+\\\\.[A-Za-z]{2,}$",email)) {
+            !Pattern.matches("^[\\w.-]+@[\\w.-]+\\.[A-Za-z]{2,}$",email)) {
                 throw new IllegalArgumentException("Invalid Email.Please enter a valid email address");
             }
             this.email=email.trim();
