@@ -1,4 +1,5 @@
-public class Main {
+import models.Vehicle;
+public class main {
     public static void main(String[] args) {
         Vehicle car = new Vehicle(
             101, "Toyota", "Corolla",
