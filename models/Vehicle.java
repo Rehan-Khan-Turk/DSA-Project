@@ -1,4 +1,5 @@
 package models;
+
 public class Vehicle {
     private final int vehicleID;
     private String make;
