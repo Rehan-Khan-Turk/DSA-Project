@@ -17,3 +17,7 @@ DSA Project Week 2 Day 2 Work:
 Today,I,Rehan Khan Turk finished the work on user.java and understand what packages do and how to access different folders in main.java using packages.Additionally,I tested my class in main.java and displayed all the user details and login status.
 
 Today, I, "faheem," started working on the `Vehicle.java` class for our Car Sell & Purchase Management System. I created the class with eight private attributes: Vehicle ID, Make, Model, Year, Color, License Plate, Availability, and Price. I implemented a parameterized constructor to initialize vehicle details, along with getter and setter methods with validation to ensure that valid information is entered. I also added a `toString()` method to display all vehicle information in a readable format. Additionally, I worked on input validation to prevent invalid vehicle IDs, empty fields, unrealistic manufacturing years, and negative prices. New vehicles are automatically marked as available by default.
+
+DSA Project Week 2 Day 3 Work:
+
+Today,I,Rehan Khan Turk added a class Customer.java in models and created its respective attributes and made a constructor to initialize them later.Additionally,i worked on the first 3 attributes making their getter and setter methods.
