@@ -21,3 +21,7 @@ Today, I, "faheem," started working on the `Vehicle.java` class for our Car Sell
 DSA Project Week 2 Day 3 Work:
 
 Today,I,Rehan Khan Turk added a class Customer.java in models and created its respective attributes and made a constructor to initialize them later.Additionally,i worked on the first 3 attributes making their getter and setter methods.
+
+DSA Project Week 2 Day 4 Work:
+
+Today,I,Rehan Khan Turk completed my work on Customer.java and tracked my progress.

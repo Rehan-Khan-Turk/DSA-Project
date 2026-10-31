@@ -43,4 +43,53 @@ public class customer {
         }
         this.phone=phone;
     }
+    public String getemail() {
+        return email;
+    }
+    public void setemail(String email) {
+        if (email == null ||
+            !email.matches ("^[\\w.-]+@[\\w.-]+\\.[A-Za-z]{2,}$")) {
+                throw new IllegalArgumentException("Invalid Email Address");
+            }
+            this.email=email;
+    }
+    public String getaddress() {
+        return address;
+    }
+    public void setaddress(String address){
+        if (address==null || address.trim().isEmpty()) {
+            throw new IllegalArgumentException("Address cannot be empty");
+        }
+        this.address=address.trim();
+    }
+    public String getcnic() {
+        return cnic;
+    }
+    public void setcnic(String cnic){
+        if (cnic==null || !cnic.matches("\\d{5}-\\d{7}-\\d")) {
+            throw new IllegalArgumentException("CNIC must be in XXXXX-XXXXXXX-X format.");
+        }
+        this.cnic=cnic;
+    }
+    public void updatephone(String phone){
+        setphone(phone);
+    }
+    public void updateemail(String email){
+        setemail(email);
+    }
+    public void updateaddress(String address){
+        setaddress(address);
+    }
+    public void displaycustomerdetails(){
+         System.out.println("Customer ID: " + customerid);
+        System.out.println("Name: " + name);
+        System.out.println("Phone: " + phone);
+        System.out.println("Email: " + email);
+        System.out.println("Address: " + address);
+        System.out.println("CNIC: " + cnic);
+    }
+    @Override 
+     public String toString() {
+        return "Customer ID: " + customerid + ", Name: " + name + ", Phone: " + phone + ", Email: " + email + ", Address: " + address + ", CNIC: " + cnic;
+    }
 }
