@@ -28,3 +28,5 @@ Today,I,Rehan Khan Turk completed my work on Customer.java and tracked my progre
 
 DSA Project Week 3 Day 1 Work:
 
+Today, I, Muhammad Sehan Asif, worked on improving the `Purchase.java` and `Payment.java` classes for our Car Sell & Purchase Management System. I reviewed and corrected the getter and setter methods, improved variable and method naming conventions, and added proper input validation to ensure valid purchase and payment information. I also improved the `getPurchaseDetails()` and `getPaymentReceipt()` methods to return formatted information instead of displaying it directly in the console. Additionally, I tested both classes using a main class to check their functionality. These improvements will make both classes more organized, reliable, and suitable for integration with our graphical user interface (GUI).
+
