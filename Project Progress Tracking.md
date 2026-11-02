@@ -10,13 +10,13 @@ Today,I,"Rehan Khan Turk" started working on User.java class and made a total of
 
 Today, I ,"Muhammad Sehan Asif" started working on the Purchase.java class for our Car Sell & Purchase Management System. I created the class with five attributes: Purchase ID, Customer ID, Vehicle ID, Purchase Date, and Amount. I also implemented a default constructor, getter and setter methods with validation, a method to take purchase details from the user, and a method to display the purchase information. Additionally, I worked on handling invalid inputs to ensure that IDs and purchase amounts are entered correctly.
 
-Today,
-
 DSA Project Week 2 Day 2 Work:
 
 Today,I,Rehan Khan Turk finished the work on user.java and understand what packages do and how to access different folders in main.java using packages.Additionally,I tested my class in main.java and displayed all the user details and login status.
 
 Today, I, "faheem," started working on the `Vehicle.java` class for our Car Sell & Purchase Management System. I created the class with eight private attributes: Vehicle ID, Make, Model, Year, Color, License Plate, Availability, and Price. I implemented a parameterized constructor to initialize vehicle details, along with getter and setter methods with validation to ensure that valid information is entered. I also added a `toString()` method to display all vehicle information in a readable format. Additionally, I worked on input validation to prevent invalid vehicle IDs, empty fields, unrealistic manufacturing years, and negative prices. New vehicles are automatically marked as available by default.
+
+Today, I, Muhammad Sehan Asif, worked on the `Purchase.java` class for our Car Sell & Purchase Management System. I updated the existing class to make it more GUI-oriented by improving its getter and setter methods and modifying the purchase details method to return information instead of displaying it directly through the console. Additionally, I created a completely new `Payment.java` class with attributes and methods to manage payment information, including payment ID, purchase ID, customer name, total amount, amount paid, payment method, and payment date. These changes will help integrate both classes with the graphical user interface (GUI) and improve the overall structure of our project.
 
 DSA Project Week 2 Day 3 Work:
 
@@ -25,3 +25,6 @@ Today,I,Rehan Khan Turk added a class Customer.java in models and created its re
 DSA Project Week 2 Day 4 Work:
 
 Today,I,Rehan Khan Turk completed my work on Customer.java and tracked my progress.
+
+DSA Project Week 3 Day 1 Work:
+
