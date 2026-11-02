@@ -68,7 +68,7 @@ public void setAmountPaid(double amountPaid) {
     }
     this.amountPaid = amountPaid;
 }
-public void setPaymentMethod(String PaymentMethod) {
+public void setPaymentMethod(String paymentMethod) {
     if (paymentMethod == null ||!(paymentMethod.equalsIgnoreCase("Cash")|| paymentMethod.equalsIgnoreCase("Bank Transfer"))) {
             throw new IllegalArgumentException("Payment method must be Cash or Bank Transfer");
         }

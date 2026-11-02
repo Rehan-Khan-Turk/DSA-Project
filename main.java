@@ -1,5 +1,8 @@
 import models.Vehicle;
 import models.user;
+import models.payment;
+import models.purchase;
+import java.time.LocalDate;
 
 public class main {
     public static void main(String[] args) {
@@ -28,5 +31,12 @@ public class main {
         } else {
             System.out.println("Login Failed!");
         }
+        payment p1 = new payment (1,101,"Muhammd Sehan Asif",4500000,4500000,"Cash",LocalDate.now());
+        System.out.println(p1.getPaymentReceipt());
+
+        purchase pu1 = new purchase(101, 0201, 0301, LocalDate.now(), 02500000);
+        System.out.println(pu1.getPurchaseDetails());
+
     }
+
 }
