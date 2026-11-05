@@ -4,6 +4,9 @@ import models.payment;
 import models.purchase;
 import java.time.LocalDate;
 import models.customer;
+import models.ReportManager;
+import java.util.ArrayList;
+import java.util.List;
 
 public class main {
     public static void main(String[] args) {
@@ -48,5 +51,16 @@ public class main {
         System.out.println("\nAfter Updating Details:");
         customer1.updatephone("03123456789");
         customer1.displaycustomerdetails();  
+
+        ReportManager rm = new ReportManager();
+        List<purchase> Purchases = new ArrayList<>();
+        Purchases.add(new purchase(1, 101, 201,LocalDate.now(), 2500000));
+        Purchases.add(new purchase(2, 102, 202,LocalDate.now(), 3000000));
+        List<payment> Payments = new ArrayList<>();
+        Payments.add(new payment(1, 1, "Ali",2500000, 1500000, "Cash", LocalDate.now()));
+        Payments.add(new payment(2, 2, "Ahmed",3000000, 3000000, "Bank Transfer", LocalDate.now()));
+        System.out.println(rm.getpurchaseHistory(Purchases));
+        System.out.println(rm.getSalesSummary(Purchases));
+        System.out.println(rm.getspaymentSummary(Payments));
     }
 }
