@@ -1,12 +1,14 @@
-import models.Vehicle;
-import models.user;
-import models.payment;
-import models.purchase;
 import java.time.LocalDate;
-import models.customer;
-import models.ReportManager;
 import java.util.ArrayList;
 import java.util.List;
+import src.Managers.VehicleManager;
+import src.Managers.ReportManager;
+import src.Managers.CustomerManager;
+import src.Models.Vehicle;
+import src.Models.customer;
+import src.Models.payment;
+import src.Models.purchase;
+import src.Models.user;
 
 public class main {
     public static void main(String[] args) {

@@ -1,5 +1,7 @@
-package models;
+package src.Managers;
 import java.util.ArrayList;
+
+import src.Models.Vehicle;
 
 public class VehicleManager {
     private ArrayList<Vehicle> vehicles;

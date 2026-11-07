@@ -1,5 +1,9 @@
-package models;
+package src.Managers;
 import java.util.List;
+
+import src.Models.Vehicle;
+import src.Models.payment;
+import src.Models.purchase;
 public class ReportManager {
         public String getAvailableVehiclesReport(List<Vehicle> vehicles){
         String report = "\n===== AVAILABLE VEHICLES REPORT =====";

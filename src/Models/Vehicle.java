@@ -1,4 +1,4 @@
-package models;
+package src.Models;
 
 public class Vehicle {
     private final int vehicleID;

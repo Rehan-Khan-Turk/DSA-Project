@@ -1,4 +1,4 @@
-package models;
+package src.Models;
 import java.time.LocalDate;
 public class purchase {
     private int purchaseID;

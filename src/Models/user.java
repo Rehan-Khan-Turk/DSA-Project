@@ -1,4 +1,4 @@
-package models;
+package src.Models;
 import java.util.regex.Pattern;
 public class user {
     private int UserID;
