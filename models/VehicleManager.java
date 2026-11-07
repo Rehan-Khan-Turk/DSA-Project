@@ -12,7 +12,7 @@ public class VehicleManager {
         if (vehicle == null) {
             return false;
         }
-        if(searchVehiclebyid(vehicle.getVehicleID()) != null) {
+        if (searchVehicleByID(vehicle.getVehicleID()) != null) {
             System.out.println("Vehicle with ID " + vehicle.getVehicleID() + " already exists.");
             return false;
         }
@@ -24,8 +24,8 @@ public class VehicleManager {
     public void viewallVehicles(){
         if(vehicles.isEmpty()){
             System.out.println("No vehicles available.");
+            return;
         }
-        return ;
             for (Vehicle vehicle : vehicles) {
                 System.out.println("-------------------------");
                 System.out.println(vehicle);
