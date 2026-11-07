@@ -59,8 +59,19 @@ public class main {
         List<payment> Payments = new ArrayList<>();
         Payments.add(new payment(1, 1, "Ali",2500000, 1500000, "Cash", LocalDate.now()));
         Payments.add(new payment(2, 2, "Ahmed",3000000, 3000000, "Bank Transfer", LocalDate.now()));
+        List<Vehicle> vehicles = new ArrayList<>();
+        Vehicle vehicle1 = new Vehicle(101, "Toyota", "Corolla", 2023, "White", "ABC-123", 2500000);
+        Vehicle vehicle2 = new Vehicle(102, "Honda", "Civic", 2022, "Black", "DEF-456", 3000000);
+        Vehicle vehicle3 = new Vehicle(103, "Suzuki", "Swift", 2021, "Red", "GHI-789", 2000000);
+        vehicles.add(vehicle1);
+        vehicles.add(vehicle2);
+        vehicles.add(vehicle3);
+        vehicle1.setAvailable(false);
         System.out.println(rm.getpurchaseHistory(Purchases));
         System.out.println(rm.getSalesSummary(Purchases));
         System.out.println(rm.getspaymentSummary(Payments));
+        System.out.println(rm.getAvailableVehiclesReport(vehicles));
+        System.out.println(rm.getSoldVehiclesReport(vehicles));
+
     }
 }
