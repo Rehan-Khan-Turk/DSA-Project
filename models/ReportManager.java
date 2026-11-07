@@ -1,6 +1,24 @@
 package models;
 import java.util.List;
 public class ReportManager {
+        public String getAvailableVehiclesReport(List<Vehicle> vehicles){
+        String report = "\n===== AVAILABLE VEHICLES REPORT =====";
+        for(int i=0 ; i<vehicles.size();i++){
+            if(vehicles.get(i).isAvailable()){
+                report +="\n" + vehicles.get(i).toString() ;
+            }
+        }
+        return report + "\n=====================================";
+    }
+    public String getSoldVehiclesReport(List<Vehicle> vehicles){
+        String report = "\n=====Sold Cars =====";
+        for(int i=0; i<vehicles.size();i++){
+            if(!vehicles.get(i).isAvailable()){
+                report +="\n" + vehicles.get(i).toString();
+            }
+        }
+        return report + "\n===================";
+    }
     public String getpurchaseHistory(List<purchase> Purchases){
         String report = "Purchase History Report\n";
         for(int i = 0 ; i<Purchases.size(); i++){
